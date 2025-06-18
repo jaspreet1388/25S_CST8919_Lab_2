@@ -1,6 +1,12 @@
 from flask import Flask, request, jsonify
+import os
 
 app = Flask(__name__)
+
+# Root route to confirm app is running
+@app.route('/')
+def home():
+    return "Flask Login Monitor App is running"
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -17,5 +23,7 @@ def login():
         return jsonify({"message": "Login failed!"}), 401
 
 if __name__ == '__main__':
-    app.run()
+    # Azure requires host 0.0.0.0 and dynamic port
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host='0.0.0.0', port=port)
 
