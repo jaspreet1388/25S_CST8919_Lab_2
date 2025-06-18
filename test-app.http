@@ -1,0 +1,18 @@
+### Test successful login
+POST https://flask-login-monition-app-hqgua7gchmcmcvey.canadacentral-01.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "password123"
+}
+
+### Test failed login
+POST https://flask-login-monition-app-hqgua7gchmcmcvey.canadacentral-01.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "wrongpassword"
+}
+
