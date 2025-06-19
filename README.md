@@ -31,6 +31,12 @@ As a cloud security engineer, you're tasked with securing a simple web applicati
 
 You must test your app using a .http file (compatible with VS Code + REST Client) and include that file in your GitHub repo as test-app.http.
 
+![image](https://github.com/user-attachments/assets/b2ed0b06-86a4-45b6-ba32-ba8f7ca50802)
+
+![image](https://github.com/user-attachments/assets/66b8ecdd-ce09-4c90-bad6-a519c19cfda0)
+
+
+
 ### Part 3: Query Logs with KQL
 1. Create a KQL query to find failed login attempts.
 2. Test it
@@ -47,6 +53,9 @@ You must test your app using a .http file (compatible with VS Code + REST Client
     - Add an Action Group to send an email notification.
     - Name the rule and set Severity (2 or 3).
     - Save the alert.
+  
+    - ![image](https://github.com/user-attachments/assets/ba114217-f918-4a76-b3b3-a140b6ebb129)
+
 
 ## Submission
 ### GitHub Repository
