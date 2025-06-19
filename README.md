@@ -64,6 +64,36 @@ Include a `README.md` with:
 | where ResultDescription has "Failed login attempt"
 
 ```
+## Create Alert Rule
+
+```
+Signal Type: Custom log search
+
+Query: Used the KQL from Part 3
+
+Evaluation settings:
+
+Aggregation: Count of table rows
+
+Threshold: > 5 failed attempts
+
+Granularity: 5 minutes
+
+Frequency: 1 minute
+
+Action Group: sendfailedloginalert
+
+Type: Email (to chha0038@algonquinlive.com)
+
+Tested: Manual test email received
+
+Severity: Set to 0 – Critical
+
+Alert Rule Name: failedalertrule
+
+```
+
+Scope: Set correctly to flaskapplogs (Log Analytics Workspace)
 
 
 - **A link to a 5-minute YouTube video demo** showing:
