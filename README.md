@@ -151,7 +151,7 @@ In a real-world scenario:
   - 
   https://youtu.be/NrBCyVk6PJ0
 
-You must test your app using a .http file (compatible with VS Code + REST Client) and include that file in your GitHub repo as test-app.http.
+
 
 
 ---
