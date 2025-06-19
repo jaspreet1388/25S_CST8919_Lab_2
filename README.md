@@ -136,27 +136,10 @@ Cause: Latency in log ingestion or misalignment with real-time tests.
 
  ## Real-World Improvement
 In a real-world scenario:
+- Log Full Request Metadata, Instead of logging only usernames and login status, I would also log: IP addresses, user-agent strings, and timestamps. This helps identify bots, crawlers, or targeted brute-force attacks from specific clients.
+- Enable Rate Limiting and Lockout Logic, I would integrate a rate limiter (e.g., Flask-Limiter) to: Block excessive login attempts from the same IP (e.g., 5 attempts in 10 minutes). Temporarily lock the user account or throttle the client after repeated failures.
 
-1. Log Full Request Metadata
-Instead of logging only usernames and login status, I would also log:
-
-IP addresses, user-agent strings, and timestamps.
-
-This helps identify bots, crawlers, or targeted brute-force attacks from specific clients.
-
-2. Enable Rate Limiting and Lockout Logic
-I would integrate a rate limiter (e.g., Flask-Limiter) to:
-
-Block excessive login attempts from the same IP (e.g., 5 attempts in 10 minutes).
-
-Temporarily lock the user account or throttle the client after repeated failures.
-
-3. Store Login Attempts in Persistent Storage
-Rather than console-only logs:
-
-Save login attempts (username, IP, time, success/failure) to a secure database or blob storage.
-
-This enables historical audits, anomaly detection, and compliance reviews.
+- Store Login Attempts in Persistent Storage, Rather than console-only logs: Save login attempts (username, IP, time, success/failure) to a secure database or blob storage. This enables historical audits, anomaly detection, and compliance reviews.
 
 
 
