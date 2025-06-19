@@ -3,7 +3,7 @@
 
 ## Objective
 
-In this lab, you will:
+In this lab, we will:
 - Create a simple Demo Python Flask app
 - Deploy a the app to Azure App Service
 - Enable diagnostic logging with Azure Monitor
@@ -111,7 +111,7 @@ You must test your app using a .http file (compatible with VS Code + REST Client
 
 Submit your **GitHub repository link** via Brightspace.
 
-**Deadline**: Wednesday, 18 June 2025
+
 
 ---
 
