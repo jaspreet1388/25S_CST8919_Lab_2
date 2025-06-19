@@ -156,11 +156,4 @@ You must test your app using a .http file (compatible with VS Code + REST Client
 
 ---
 
-## Submission Instructions
-
-Submit your **GitHub repository link** via Brightspace.
-
-
-
----
 
