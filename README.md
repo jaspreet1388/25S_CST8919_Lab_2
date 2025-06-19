@@ -104,6 +104,35 @@ Alert Rule Name: failedalertrule
 
 Scope: Set correctly to flaskapplogs (Log Analytics Workspace)
 
+## Challenges Faced
+- URL Not Found (404) Errors
+
+App Service didn't properly serve the /login endpoint after deployment.
+
+Cause: Incomplete deployment, route mismatch, or inactive app.py.
+
+- Log Analytics Delay / No Logs
+
+Queries didn’t return results even though logging code was present.
+
+Cause: Time range mismatch, improper message filters, or logs not being streamed.
+
+- Deployment Conflict (409)
+
+GitHub Actions failed to push code to App Service.
+
+Cause: App may have been in a running state or not correctly reset before deployment.
+
+- Email Alerts Not Received
+
+Despite correct action group, email wasn't received.
+
+Cause: Alert rule condition may never have evaluated to true.
+-  Time-Sensitive Conditions
+
+Filtering logs for ago(5m) missed real log entries.
+
+Cause: Latency in log ingestion or misalignment with real-time tests.
 
 - **A link to a 5-minute YouTube video demo** showing:
   - App deployed
