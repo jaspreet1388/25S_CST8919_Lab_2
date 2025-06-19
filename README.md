@@ -58,6 +58,13 @@ You must test your app using a .http file (compatible with VS Code + REST Client
 Include a `README.md` with:
   - Briefly describe what you learned during this lab, challenges you faced, and how you’d improve the detection logic in a real-world scenario.
   - Your KQL query with explanation
+``` kql
+    AppServiceConsoleLogs
+| where TimeGenerated > ago(5m)
+| where ResultDescription has "Failed login attempt"
+
+```
+
 
 - **A link to a 5-minute YouTube video demo** showing:
   - App deployed
