@@ -64,7 +64,7 @@ Include a `README.md` with:
 | where ResultDescription has "Failed login attempt"
 
 ```
-## Create Alert Rule
+## Create Alert Rule:
 
 ```
 Signal Type: Custom log search
